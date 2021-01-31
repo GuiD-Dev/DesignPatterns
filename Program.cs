@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Factory;
+﻿using DesignPatterns.AbstractFactory;
+using DesignPatterns.Factory;
 
 namespace DesignPatterns
 {
@@ -7,6 +8,7 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             new FactoryPattern();
+            new AbstractFactoryPattern();
         }
     }
 }
