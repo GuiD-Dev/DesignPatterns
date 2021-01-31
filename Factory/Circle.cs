@@ -2,7 +2,7 @@ using System;
 
 namespace DesignPatterns.Factory
 {
-    public class Circle : Shape
+    public class Circle : IShape
     {
         public void area(params double[] args)
         {

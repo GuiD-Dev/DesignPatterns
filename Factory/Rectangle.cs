@@ -2,7 +2,7 @@ using System;
 
 namespace DesignPatterns.Factory
 {
-    public class Rectangle : Shape
+    public class Rectangle : IShape
     {
         public void area(params double[] args)
         {

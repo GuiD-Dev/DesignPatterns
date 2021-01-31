@@ -4,7 +4,7 @@ namespace DesignPatterns.Factory
 {
     public class ShapeFactory
     {
-        public Shape getShape(string shapeType)
+        public IShape getShape(string shapeType)
         {
             if (string.IsNullOrEmpty(shapeType))
             {

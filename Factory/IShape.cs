@@ -1,6 +1,6 @@
 namespace DesignPatterns.Factory
 {
-    public interface Shape
+    public interface IShape
     {
         void area(params double[] args);
         void draw();

@@ -6,17 +6,17 @@ namespace DesignPatterns.Factory
         {
             ShapeFactory shapeFactory = new ShapeFactory();
 
-            Shape shape1 = shapeFactory.getShape("CIRCLE");
-            shape1.draw();
-            shape1.area(7);
+            var circle = shapeFactory.getShape("CIRCLE");
+            circle.draw();
+            circle.area(7);
 
-            Shape shape2 = shapeFactory.getShape("RECTANGLE");
-            shape2.draw();
-            shape2.area(2, 3);
+            var rectangle = shapeFactory.getShape("RECTANGLE");
+            rectangle.draw();
+            rectangle.area(2, 3);
 
-            Shape shape3 = shapeFactory.getShape("SQUARE");
-            shape3.draw();
-            shape3.area(5);
+            var square = shapeFactory.getShape("SQUARE");
+            square.draw();
+            square.area(5);
         }
     }
 }
