@@ -10,6 +10,7 @@ namespace DesignPatterns
         {
             new FactoryPattern().Dispose();
             new AbstractFactoryPattern().Dispose();
+            new SingletonPattern().Dispose();
         }
     }
 }
