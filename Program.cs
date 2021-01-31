@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.AbstractFactory;
 using DesignPatterns.Factory;
+using DesignPatterns.Singleton;
 
 namespace DesignPatterns
 {
@@ -7,8 +8,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            new FactoryPattern();
-            new AbstractFactoryPattern();
+            new FactoryPattern().Dispose();
+            new AbstractFactoryPattern().Dispose();
         }
     }
 }

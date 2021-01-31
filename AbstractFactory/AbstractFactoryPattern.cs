@@ -2,12 +2,10 @@ using System;
 
 namespace DesignPatterns.AbstractFactory
 {
-    public class AbstractFactoryPattern
+    public class AbstractFactoryPattern : PatternSample
     {
-        public AbstractFactoryPattern()
+        public AbstractFactoryPattern() : base("Abstract")
         {
-            Console.WriteLine("ABSTRACT FACTORY PATTERN SAMPLES");
-
             var simpleShapeFactory = FactoryProducer.getFactory(false);
 
             var simpleRect = simpleShapeFactory.getShape("RECTANGLE");
@@ -23,8 +21,6 @@ namespace DesignPatterns.AbstractFactory
             
             var roundedSquare = roundedShapeFactory.getShape("SQUARE");
             roundedSquare.draw();
-
-            Console.WriteLine();           
         }
     }
 }

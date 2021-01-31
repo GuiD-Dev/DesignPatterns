@@ -2,12 +2,10 @@ using System;
 
 namespace DesignPatterns.Factory
 {
-    public class FactoryPattern
+    public class FactoryPattern : PatternSample
     {
-        public FactoryPattern()
+        public FactoryPattern() : base("Factory")
         {
-            Console.WriteLine("FACTORY PATTERN SAMPLES");
-
             var shapeFactory = new ShapeFactory();
 
             var circle = shapeFactory.getShape("CIRCLE");
@@ -21,8 +19,6 @@ namespace DesignPatterns.Factory
             var square = shapeFactory.getShape("SQUARE");
             square.draw();
             square.area(5);
-
-            Console.WriteLine();
         }
     }
 }
